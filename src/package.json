@@ -1,0 +1,19 @@
+{
+  "name": "shootout-js-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schererja/shootout-js-nodejs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schererja/shootout-js-nodejs/issues"
+  },
+  "homepage": "https://github.com/schererja/shootout-js-nodejs#readme"
+}
