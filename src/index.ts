@@ -1,11 +1,24 @@
+import bodyparser from "body-parser";
 import dotenv from "dotenv";
 import express from "express";
+import * as passport from "passport";
+import * as passportJWT from "passport-jwt";
 import path from "path";
 
 dotenv.config();
+const extractJWT = passportJWT.ExtractJwt;
+const JwtStrategy = passportJWT.Strategy;
 const app = express();
-const port = process.env.SERVER_PORT; // default port to listen
+const port = process.env.SERVER_PORT || 3000; // default port to listen
 
+const jwtOptions = {
+    jwtFromRequest : extractJWT.fromAuthHeaderWithScheme("jwt"),
+    secretOrKey: process.env.JWT_SECRET || "UpdateENV"
+};
+
+// const strategy = new JwtStrategy(jwtOptions, (jwtPayload, next) =>{
+
+// })
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
