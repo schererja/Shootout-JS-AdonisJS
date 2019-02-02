@@ -4,6 +4,7 @@ import express from "express";
 import * as passport from "passport";
 import * as passportJWT from "passport-jwt";
 import path from "path";
+import 'reflect-metadata';
 
 dotenv.config();
 const extractJWT = passportJWT.ExtractJwt;
