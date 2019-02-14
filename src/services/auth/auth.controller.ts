@@ -1,3 +1,9 @@
 import * as express from 'express';
 import * as jwt from 'jsonwebtoken';
-import { User } from '../user';
+
+const router = express.Router();
+
+router.route('/login')
+  .post((req, res) => {
+
+  });
